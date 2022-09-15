@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./images/interior.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+@media screen and (min-width: 768px) {
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 3rem;
+  }
+  .nav-links {
+    position: relative;
+    float: right;
+
+    padding-bottom: 40px;
+    border-bottom: 2px solid #fff;
+  }
+  .nav-links li {
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  .nav-links li:not(:last-of-type) {
+    margin-right: 60px;
+  }
+
+  .nav-logo {
+    display: inline-block;
+    max-width: 46px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .phone-svg svg {
+    position: absolute;
+    width: 160%;
+    left: -130px;
+    top: -35px;
+  }
+
+  main {
+    position: relative;
+    margin: 4rem;
+    height: 100%;
+  }
+  main .card {
+    float: right;
+  }
+
+  .card {
+    width: 270px;
+    height: 170px;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    box-shadow: 0 3px 5px #0000004c;
+  }
+
+  .card-puzzle {
+    position: absolute;
+    top: -1rem;
+    right: 3rem;
+  }
+
+  .card-light {
+    position: absolute;
+    bottom: 15rem;
+    right: 22rem;
+  }
+  .card-light .line {
+    position: absolute;
+    top: 60px;
+    right: -100px;
+  }
+
+  .icon-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 50px;
+    border-radius: 5rem;
+    background: #fff;
+  }
+
+  .desc {
+    position: absolute;
+    margin-right: 1rem;
+    bottom: 2rem;
+    font-weight: 600;
+  }
+
+  .card-puzzle .line {
+    position: absolute;
+    bottom: -67px;
+    right: 20px;
+    transform: rotate(90deg);
+  }
+
+  .heading {
+    position: absolute;
+    left: 14rem;
+    top: 3rem;
+    max-width: 600px;
+    font-size: 3rem;
+  }
+  .btn-learn-more {
+    position: absolute;
+    left: 14rem;
+    top: 16rem;
+    border: 0;
+    text-transform: uppercase;
+    outline: 0;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    cursor: grab;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-logo {
+    margin: 20px 10px 10px 10px;
+    font-weight: 700;
+    max-width: 49px;
+    display: inline-block;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 400px;
+    font-weight: 900;
+    line-height: 1;
+    font-style: bold;
+    font-size: 3.5rem;
+  }
+
+  .btn-learn-more {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid #fff;
+    border-radius: 30px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .card {
+    position: relative;
+    margin-bottom: 60px;
+    text-align: center;
+    padding: 15px;
+    line-height: 1.2;
+    border-radius: 10px;
+    max-width: 170px;
+    margin-left: -100px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .card .icon-span {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    right: -20px;
+    padding: 10px;
+    border-radius: 100%;
+    top: -30px;
+  }
+}
