@@ -77,5 +77,5 @@ For this project I took around `4` hours, most of the time were taken to make it
 
 <!-- Project screenshot -->
 
-[project-url]: https://shivanand-project-10.netlify.app/
-[source-code]: https://github.com/Shivanand0297/Project-10-Fullstack-Javascript-Web-Development-Bootcamp
+[project-url]: https://interiortheme.netlify.app/
+[source-code]: https://github.com/nkumar007/10.Interiordesignhomepage
